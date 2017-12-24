@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author __your name___
+ * @version __date__
+ */ 
+public class Lab02d
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+	  final double AREA;
+	  
+      // variables
+	  double a, b, c, s, 
+		numberOfFlowers;
+
+      // program code
+      System.out.println( "Start...");
+	  
+	  // promt user and get a, b, c
+	  System.out.println( "Please enter lengths of the sides of your garden");
+	  System.out.print( "side 1: ");
+		a = scan.nextDouble();
+	  System.out.print( "side 2: ");
+		b = scan.nextDouble();
+	  System.out.print( "side 3: ");
+		c = scan.nextDouble();
+	  
+	  // calculate area of triangle
+	  s = ( a + b +c ) / 2;
+	  AREA = Math.sqrt( s * ( s - a) * ( s - b) * ( s - c));
+	  
+	  // find number of flowers that can be planted
+	  numberOfFlowers = AREA * 17;
+	  
+	  // print result
+	  System.out.println( "A total of " + (int)numberOfFlowers + " flowers can be planted at most.");
+
+      System.out.println( "End.");
+   }
+
+}

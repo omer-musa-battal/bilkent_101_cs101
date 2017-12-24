@@ -1,0 +1,142 @@
+import java.util.Scanner;
+
+/**
+ * this is a simple calculator program.
+ * it does four fundemental arithmetic operations
+ * and calculates sin with various techniques
+ * has a menu and an accumulator display.
+ * has clear and quit functions.
+ * @author omer musa battal
+ * @version 17.11.2016
+ */ 
+public class SimpleCalc
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+      
+      // constants
+      final String SEPERATOR = "------------------";
+      final String MENU = SEPERATOR + "\n  +,-,*,/,sin value\n  Clear\n  Quit\n" + SEPERATOR + "\nSelect: ";
+      
+      // variables
+      String operation;
+      double numberToCalc;
+      double accumulator;
+      // variables below are for sin calculation
+      int n; // step of Taylor sum
+      int specifiedNumber;
+      double specifiedAccuracy;
+      double unit; // one element of the Taylor sum
+      long factorialN; // required factorial for sin calculation
+      
+      // program code
+      System.out.println( "Welcome to \"SimpleCalc\"...\n");
+      accumulator = 0;
+      
+      // keep menu up until user quits
+      do
+      {
+         // print accumulator and menu
+         System.out.println( "\n" + SEPERATOR);
+         System.out.println( "[ " + accumulator + " ]");
+         System.out.print( MENU);
+         // get operation type from user input
+         operation = scan.next();
+         operation = operation.toLowerCase();
+         
+         // clear
+         if ( operation.equals( "clear") || operation.equals( "c") )
+         {
+            accumulator = 0;
+         }
+         // calculate addition
+         else if ( operation.equals( "+") )
+         {
+            numberToCalc = scan.nextDouble();
+            accumulator = accumulator + numberToCalc;
+         }
+         // calculate substraction
+         else if ( operation.equals( "-") )
+         {
+            numberToCalc = scan.nextDouble();
+            accumulator = accumulator - numberToCalc;
+         }
+         // calculate multiplication
+         else if ( operation.equals( "*") )
+         {
+            numberToCalc = scan.nextDouble();
+            accumulator = accumulator * numberToCalc;
+         }
+         // calculate division
+         else if ( operation.equals( "/") )
+         {
+            numberToCalc = scan.nextDouble();
+            accumulator = accumulator / numberToCalc;
+         }
+         // calculate sin
+         else if ( operation.equals( "sin") )
+         {
+            numberToCalc = scan.nextDouble();
+            
+            /*
+             // using Math.sin
+             // accumulator = Math.sin( numberToCalc);
+             */
+            
+            /*
+             // using the Taylor series expansion formula 
+             // to compute sin to a specified number of terms
+             specifiedNumber = 10;
+             for ( int n = 0; n <= specifiedNumber; n++)
+             {
+             // calculate factorial
+             factorialN = 1;
+             for ( int i = 1; i <= 2 * n + 1; i++)
+             {
+             factorialN = factorialN * i;
+             }
+             // find result
+             accumulator = accumulator + ( Math.pow( -1, n) * Math.pow( numberToCalc, 2 * n + 1) ) / factorialN;
+             
+             }
+             */
+            
+            // using the Taylor series expansion formula 
+            // to compute it to a specified accuracy, e.g. < 0.0001
+            accumulator = 0;
+            specifiedAccuracy = 0.0001;
+            unit = 0.0001;
+            n = 0;
+            while ( unit >= specifiedAccuracy || unit <= -specifiedAccuracy )
+            {
+               // calculate factorial
+               factorialN = 1;
+               for ( int i = 1; i <= 2 * n + 1; i++)
+               {
+                  factorialN = factorialN * i;
+               }
+               // find unit
+               unit = ( Math.pow( -1, n) * Math.pow( numberToCalc, 2 * n + 1) ) / factorialN;
+               // add unit to result
+               accumulator = accumulator + unit;
+               n++;
+            }
+            
+         }
+         // exclude "quit" or "q", so it does not give error
+         else if ( operation.equals( "quit") || operation.equals( "q") )
+         { }
+         // for anything else, give error
+         else
+         {
+            System.out.println( "Error: Invalid operation");
+         }
+         
+      } while ( !( operation.equals( "quit") || operation.equals( "q") ) );
+      
+      System.out.println( "Thanks for using \"SimpleCalc\", goodbye.");
+      
+   }
+   
+}

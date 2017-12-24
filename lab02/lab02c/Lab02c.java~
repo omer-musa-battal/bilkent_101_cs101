@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author __your name___
+ * @version __date__
+ */ 
+public class Lab02c
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+	  final int INT1, INT2;
+
+      // variables
+	  int sum, difference,
+		  product, division, remainder,
+		  maximum, minimum;
+		  
+      // program code
+	  
+      System.out.println( "Start...");
+	  
+	  // promt user and get input
+	  System.out.println( "Please enter two integers");
+	  System.out.print( "Integer 1: ");
+		INT1 = scan.nextInt();
+	  System.out.print( "Integer 2: ");
+		INT2 = scan.nextInt();
+	  
+	  // calculate wanted results
+	  sum        = INT1 + INT2;
+	  difference = INT1 - INT2;
+	  product    = INT1 * INT2;
+	  division   = INT1 / INT2;
+	  remainder  = INT1 % INT2;
+	  maximum    = Math.max( INT1, INT2);
+	  minimum    = Math.min( INT1, INT2);
+	  
+	  // print results
+	  System.out.println( "");
+	  System.out.println( "__Results__");
+	  System.out.println( "");
+	  System.out.println( "sum        = " + sum       );
+	  System.out.println( "difference = " + difference);
+	  System.out.println( "product    = " + product   );
+	  System.out.println( "division   = " + division  );
+	  System.out.println( "remainder  = " + remainder );
+	  System.out.println( "maximum    = " + maximum   );
+	  System.out.println( "minimum    = " + minimum   );
+	  
+      System.out.println( "End.");
+   }
+
+}

@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author omer musa battal
+ * @version 27.10.2016
+ */ 
+public class Lab03b
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+      int a;
+      int b;
+      int c;
+      
+      // program code
+
+      System.out.print( "Enter value for a: ");
+
+      a = scan.nextInt();
+      
+      System.out.print( "Enter value for b: ");
+
+      b = scan.nextInt();
+
+      System.out.print( "Enter value for c: ");
+
+      c = scan.nextInt();
+
+      if ( a < b + c && b < a + c && c < a + b )
+         System.out.print( "");
+      else
+         System.out.print( "Invalid input.");
+   }
+
+}
