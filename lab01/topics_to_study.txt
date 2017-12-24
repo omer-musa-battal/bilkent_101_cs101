@@ -1,0 +1,6 @@
+webpage design
+spreadsheet usage
+presentation usage
+windows cmd usage
+unix/inux usage
+ftp usage

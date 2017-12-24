@@ -1,0 +1,80 @@
+HW_Essay : Contemporary Issues in Computing
+
+Graded homework: 5% of course grade.
+
+Assigned:     4th November 2016
+Due:             at 11:30 on Saturday 19th November 2016      <<<  hard deadline, enforced by Moodle!
+
+Important:  Please name your file in a similar way to the lab assignments, 
+                    i.e. SS_HWEssay_surname_firstName_topic.xxx 
+                    (where SS is your section number, topic is a very concise topic description and xxx is the file type: doc or pdf.)
+                    Use this (filename) for the submission title too, please.
+
+You are asked to investigate and write a short essay on a contemporary issue related to computing. Your essay should demonstrate that you have researched and thought about the topic. 
+It should offer a clear and concise summary of the main ideas (alternative positions, arguments, etc.) and then present your personal view,
+ indicating why you believe this to be (technically, environmentally, ethically, legally, economically...) appropriate. Select one of the topics below or propose one of your own.
+
+Privacy vs. utility in data sharing, e.g. your DNA.
+Making quality decisions given pervasive information distortion on the web.
+The changing role of universities in the Internet Age.
+Is Technology making us smarter or dumber?
+Is Artificial Intelligence a real treat to humanity?
+Should every student learn to code in high school?
+The role of data mining in business decision making
+Data mining use cases for social media analysis
+The impact of smartphone technology on our daily life?
+Anonymity vs. Freedom of Expression on the Internet.
+What's happening to people's jobs?
+The impact of virtual reality to the near future: Oculus Rift and Facebook
+Impact and importance of crowd activities (Kickstarter, Anonymous etc.) on the internet.
+Deleting information from social networks: is it possible?
+Programming education in primary and high school's
+What is crowd-sourcing? What are some examples of it that have been successfully put to use?
+How does computer science and engineering impact scientific advancements in life sciences?
+What are “games with a purpose” or  “human-based computation games” ?
+What is the idea behind some automatic machine translation tools, i.e. Google Translate? Why is it more successful than earlier methods?
+What is Green computing?
+The Samsung-Apple disputes have once again highlighted the power of patents. Are patents really a good idea?
+The EU wants individuals to have the right to "delete" their information from Social Networking sites, such as Facebook? Does this make sense? Is it even possible?
+Making huge data sets (such as census data or national health records) publically available has obvious commercial advantages, but also grave social risks. Is it possible to obtain the benefits without disadvantaging anyone?
+Planned obsolescence may be good engineering practice, but is it still a good idea? How does it impact society, the economy and sustainability?
+Should computer engineers be licensed in the same way that doctors and lawyers have to be?
+When software fails, who should be responsible? The programmer, the company, management, or perhaps the program itself?
+Can intelligent autonomous robots benefit humanity or are we simply constructing ever more efficient killing machines?
+Can machines have morals? If so, would this help keep us safe or is the Terminator/SkyNet vision of the future inevitable? 
+WikiLeaks has demonstrated both the difficulty of keeping information private and the force that governments can exert in their attempts to do so. Should engineers designing future Internet systems allow for more openness or more control?
+Incorporating games into the computing curriculum seems like a way to encourage students to learn about computers and so reduce falling admissions. Or is it just a waste of time?
+What will the next software engineering paradigm look like? Do we need another one? What's wrong with OOP?
+Traditional software development relies on the so-called waterfall model: requirements, design, test, distribute, maintain. Newer, "agile", methodologies suggest this is too strict. Compare and contrast.
+Traditionally we design and write the code, then we test it. Test Driven Design (TDD) suggests it is better to write the tests first, then the code. What are the pros and cons?
+What makes developing applications for smart phones so problematic? Is there a solution on the horizon?
+What is Cloud computing? Is it really new? How does it compare to other forms of computing?
+How are multi-core processors changing software engineering? What approaches to writing software for multi-core processors are currently under investigation.
+What new storage technologies are under development and how will they impact the architecture of our computers?
+Is Quantum Computing really any different than conventional computing?
+Wearable computing
+IoT (Internet Of Things)
+Augmented Reality
+Write an absolute minimum of 1000 words, and an absolute maximum of 1500 words (including everything: title, author, references, etc.) 
+
+Submit your essay via Moodle in either pdf or Microsoft Word (doc) format. 
+
+Make sure your essay has a meaningful title and that you include your name, course & section number, the assignment name--HW_Essay: Contemporary Issues in Computing-- and the date (at the top of the first page). 
+
+You must include at least 2 relevant references to articles published in scientific journals. Note: articles from Wikipedia or the popular press are not acceptable!
+
+Sources should be cited in accord with the format shown in http://www.cs.bilkent.edu.tr/~david/plagiarism/; that is,
+
+literally copied text should be place between quotation marks & followed by the in-text citation
+text that refers to ideas, arguments, data, etc., in other sources, 
+should have the author name, followed by an appropriate in-text citation
+references should be numbered sequentially in the order they are cited in the text,
+the in-text citation should consist of the citation number between square brackets,
+details of each source should appear in a "References" section at the end of the article
+(in a consistent & standard way).
+Look at examples and check out some actual engineering journals. If in doubt, talk to your English teacher!
+
+This work must be done individually. Plagiarism or any other form of cheating will result in an FZ grade and possible disciplinary action. Reusing one of your own essays is considered self-plagiarism and so not allowed.
+
+
+
